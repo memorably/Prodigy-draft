@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodigy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <nav class="navbar">
+            <img src="/Draft/img/menu.png" alt=""  id="menuicon">
+            <span id="navname" onclick="homepageRedirect()">PRODIGY</span>
+            <button class="navlinks" id="loginbtn">
+                <a href="#">Đăng nhập</a> 
+            </button>
+            <button class="navlinks" id="signupbtn">
+                <a href="signup.html">Đăng kí</a>
+            </button>
+
+        </nav>
+        
+        <div class="sidenav" id="mysidenav" >
+            <img src="/Draft/img/menu.png" alt=""  id="closemenuicon">
+            <div class="sidenavlinks">
+                <a href="#">Trang chủ</a>
+                <a href="#">Tìm kiếm</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Về chúng tôi</a>    
+            </div>
+        </div>
+    
+    </div>
+
+    <div id="introbox">
+        <div class="cover">
+            <img src="/Draft/img/homeCover.png" alt="" id="homecover">
+        </div>
+
+        <div class="introtext">
+            <h2> Lời Giới thiệu</h2>
+            <br>
+            <p>
+                Những bài đọc trên Prodigy được biên dịch dựa trên bộ sách nổi tiếng “Daily Warm-ups Reading” của Nhà Xuất Bản Teacher Created Resources, cung cấp kiến thức một cách phong phú qua các chủ đề khác nhau từ động vật, lịch sử, địa lý cho đến khoa học.
+            </p>
+            <br>
+            <p>
+                Các bài đọc được thiết kế ngắn gọn, dễ hiểu, đồng thời lồng ghép những câu hỏi dựa trên quy tắc phân loại của Bloom nhằm giúp các bạn nhỏ từng bước rèn luyện kỹ năng đọc hiểu, mở rộng vốn từ… Đây chính là tiền đề cho việc phát triển ngôn ngữ và hiểu biết sâu rộng cho các em sau này.
+            </p>
+            <br>
+            <p>
+                Các em hãy tự tìm hiểu và khám phá Prodigy cùng với bố mẹ nhé! Và hãy tự đặt ra cho mình mục tiêu mỗi ngày “chinh phục" tối thiểu 1-2 bài đọc được không nào?
+            </p>
+            <br>
+
+            <a href="#">Team Prodigians</a>
+    
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modalcontainer">
+            <div class="logintext">
+                <h3>Đăng nhập</h3>
+            </div>
+
+            <form action="/Draft/action_page.php" method="POST">
+                <div class="datacontainer">
+                    <div class="data">
+                        <label for="uname">Email</label>
+                        <input type="text" placeholder="Nhập Email" name="uname" required>
+                    </div>
+    
+                    <div class="data">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" placeholder="Nhập Mật khẩu" name="password" required>    
+                    </div>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+    
+                    <div class="loginsubmit">
+                        <button type="submit" class="button">Đăng nhập</button>
+                    </div>
+
+                    <a href="#" class="fgpw">Quên Mật khẩu?</a>
+                </div>
+            </form>
+        </div>    
+    </div>
+    <!-- <div id="loginFormID" class="loginForm">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div> -->
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</body>
+</html>
