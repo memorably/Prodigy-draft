@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #DCE7E9;
+    z-index: 0;
+}
+
+.navbar{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    background-color: #006a71;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+#menuicon{
+    position: absolute;
+    left: 2.5vh;
+    top: 1.5vh;
+    height: 5vh;
+    width: 5vh;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#closemenuicon{
+    position: absolute;
+    left: 2.5vh;
+    top: 1.5vh;
+    height: 5vh;
+    width: 5vh;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#navname{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navlinks{
+    position: relative;
+    height: 5.5vh;
+    width: 18vh;
+    border: none;
+    background-color: #FF4652; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+}
+.navlinks:hover{
+    background-color: #fd7b83;
+}
+
+#loginbtn{
+    margin: 0 2vh 0 0;
+}
+
+#signupbtn{
+    position: relative;
+    margin: 0 6vh 0 0;
+    font-weight: 600;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0vw; /*20vw*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #66bfbf;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.sidenavlinks{
+    height: 70vh;
+    width: 16vw;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+.sidenavlinks a{
+    color: white;
+}
+
+.sidenavlinks a{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.cover img{
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+    border-bottom: white;
+}
+
+.introtext{
+    margin: 5vh 10vh 10vh 10vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5vh;
+    text-align: justify;
+}
+
+.introtext h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.introtext a{
+    float: right;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.modalcontainer {
+    background-color: #fefefe;
+    height: auto;
+    width: 40vw;
+    padding: 2vh;
+}
+
+.logintext {
+    text-align: center;
+    margin: 2vh;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1vh 0 2vh 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.loginsubmit button {
+    width: 100%;
+    margin: 2vh 0 2vh 0;
+    padding: 2vh;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.loginsubmit button:hover {
+    opacity: 0.8;
+}
+
+.fgpw {
+    float: right;
+}
